@@ -1,16 +1,75 @@
 body{
     background-color: #ebc8cc;
     color: white;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 
 h1, h3{
     font-family: 'Manrope', sans-serif;
+    text-align: center;
 }
 
-main{
-    padding: 20px;
+.emotion-selector-form{
     display: flex;
-    align-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+.poop{
+    background-image:url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/pile-of-poo_1f4a9.png);
+}
+.anxious{
+    background-image:url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/face-with-open-mouth-and-cold-sweat_1f630.png);
+}
+
+.asfjkasjk{
+    background-image:url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/face-with-uneven-eyes-and-wavy-mouth_1f974.png);
+}
+
+.prettyGood{
+    background-image:url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/thumbs-up-sign_emoji-modifier-fitzpatrick-type-5_1f44d-1f3fe_1f3fe.png);
+}
+
+.soGood{
+    background-image:url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/smiling-face-with-open-mouth_1f603.png);
+}
+
+.idk{
+    background-image:url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/woman-shrugging-type-5_1f937-1f3fe-200d-2640-fe0f.png);
+}
+
+.emotion-selector-form input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.emotion-selector-form input:active +.drinkcard-cc{
+    opacity: .9;
+}
+
+.emotion-selector-form input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+

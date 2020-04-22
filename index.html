@@ -8,31 +8,34 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <h1>Quarantine Check</h1>
     <h3>How Are You Doing Today?</h3>
-    <main>
-        <section class="emotion">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/pile-of-poo_1f4a9.png" alt="poop emoji">
-            <p>poop</p>
-        </section>
-        <section class="emotion">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/face-with-open-mouth-and-cold-sweat_1f630.png" alt="face-with-open-mouth-and-cold-sweat">
-            <p>anxious</p>
-        </section>
-        <section class="emotion">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/face-with-uneven-eyes-and-wavy-mouth_1f974.png" alt="face-with-uneven-eyes-and-wavy-mouth">
-            <p>asfjkasjk</p>
-        </section>
-        <section class="emotion">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/thumbs-up-sign_emoji-modifier-fitzpatrick-type-5_1f44d-1f3fe_1f3fe.png" alt="thumbs-up-sign_emoji">
-            <p>pretty good</p>
-        </section>
-        <section class="emotion">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/smiling-face-with-open-mouth_1f603.png" alt="smiling-face-with-open-mouth">
-            <p>so good</p>
-        </section>
-        <section class="emotion">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/woman-shrugging-type-5_1f937-1f3fe-200d-2640-fe0f.png" alt="woman-shruggin">
-            <p>I don't know</p>
-        </section>     
-    </main>
+    <form class="emotion-selector-form" action="/some-server-endpoint" method ="post">
+        <input id="poop" type="radio" name="emotion" value="poop" />
+        <label class="drinkcard-cc poop"for="poop"></label>
+        <p>poop</p>
+
+        <input id="anxious" type="radio" name="emotion" value="anxious" />
+        <label class="drinkcard-cc anxious"for="anxious"></label>
+        <p>anxious</p>
+
+        <input id="asfjkasjk" type="radio" name="emotion" value="asfjkasjk" />
+        <label class="drinkcard-cc asfjkasjk"for="asfjkasjk"></label>
+        <p>asfjkasjk</p>
+        <input id="prettyGood" type="radio" name="emotion" value="prettyGood" />
+        <label class="drinkcard-cc prettyGood"for="prettyGood"></label>
+        <p>pretty good</p>
+
+        <input id="soGood" type="radio" name="emotion" value="soGood" />
+        <label class="drinkcard-cc soGood"for="soGood"></label>
+        <p>SO GOOD</p>
+
+        <input id="idk" type="radio" name="emotion" value="idk" />
+        <label class="drinkcard-cc idk"for="idk"></label>  
+        <p>idk</p>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>    
+    </form> 
 </body>
 </html>
