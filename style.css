@@ -1,3 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+  
+main { 
+    padding: 10px;  
+    margin: 0 auto;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.icon-cntr{
+    margin-bottom: 20px;
+    display: flex;  
+    flex-direction: row;   
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+.emo-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-cntr{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+  }
+
 body{
     background-color: #ebc8cc;
     color: white;
@@ -9,6 +43,98 @@ h1, h3{
     text-align: center;
 }
 
+button{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    margin: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+button:hover{
+    background-color: gray; 
+    color: white;
+}
+
+.emoji {
+    float: left;
+    position: relative;
+    width: 70%;
+    padding: 2px;  
+    cursor: pointer;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+    filter: brightness(1.8) grayscale(1) opacity(.7);
+  }
+  
+  .emoji:hover{
+    /*border: 1px solid grey;*/
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+  } 
+  
+  .emoji-on {
+    opacity: .9;
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+  }
+  
+  /* Manually set outline color 
+  for a11y */
+  input[type="image"]:focus {
+    outline: auto 2px Highlight;
+    outline: auto 5px -webkit-focus-ring-color;
+    z-index: 1;
+    opacity: .9;
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+  }
+
+
+  @media only screen and (max-width: 750px) {
+    p{
+        font-size: 15px;
+    }
+}
+  
+  @media only screen and (max-width: 620px) {
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .icon-cntr{
+        margin-bottom: 20px;
+        display: flex;  
+        flex-direction: column;   
+      }
+    
+    .btn-cntr{
+        display: flex;  
+        flex-direction: row;
+        align-items: center;
+      }
+    
+    .emoji{
+          width: 40%;
+      }
+    
+    button{
+        font-size: 11px;
+    }
+  }
+
+/*
 .emotion-selector-form{
     display: flex;
     flex-direction: row;
@@ -37,6 +163,16 @@ h1, h3{
 .idk{
     background-image:url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/woman-shrugging-type-5_1f937-1f3fe-200d-2640-fe0f.png);
 }
+.container {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+  }
+  .container .btn-holder {
+    justify-content: flex-start;
+    display: flex;
+  }
+
 
 .emotion-selector-form input{
     margin:0;padding:0;
@@ -72,4 +208,4 @@ h1, h3{
        -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
             filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
-
+*/

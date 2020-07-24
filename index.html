@@ -4,11 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quarantine Check:How you doing?</title>
+    
+    <meta name="description" content="How are you doing in quarantine?">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <h1>Quarantine Check</h1>
+</head>
+<body> 
+    <h1>Quarantine 2020 Check</h1>
     <h3>How Are You Doing Today?</h3>
-    <form class="emotion-selector-form" action="/some-server-endpoint" method ="post">
+        
+            <main>
+                <div class='icon-cntr'>
+                    <div class='emo-icon'>
+                        <p>poop</p>
+                        <input type="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/pile-of-poo_1f4a9.png" alt="pile of poo emoji" aria-pressed="false" class="emoji js-emoji">
+                    </div>
+                    <div class='emo-icon'>
+                        <p>anxious</p>
+                        <input type="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/face-with-open-mouth-and-cold-sweat_1f630.png" alt="face with open mouth and cold sweat emoji" aria-pressed="false" class="emoji js-emoji">
+                    </div>
+                    <div class='emo-icon'>
+                        <p>asfjkasjk</p>
+                        <input type="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/face-with-uneven-eyes-and-wavy-mouth_1f974.png" alt="face with uneven eyes and wavy mouth emoji" aria-pressed="false" class="emoji js-emoji">
+                    </div>
+                    <div class='emo-icon'>
+                        <p>pretty good</p>
+                        <input type="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/thumbs-up-sign_emoji-modifier-fitzpatrick-type-5_1f44d-1f3fe_1f3fe.png" alt="thumbs up emoji" aria-pressed="false" class="emoji js-emoji">
+                    </div>
+                    <div class='emo-icon'>
+                        <p>SO GOOD</p>
+                        <input type="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/smiling-face-with-open-mouth_1f603.png" alt="smiling face with open mouth emoji" aria-pressed="false" class="emoji js-emoji">
+                    </div>
+                    <div class='emo-icon'>
+                        <p>idk</p>
+                        <input type="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/237/woman-shrugging-type-5_1f937-1f3fe-200d-2640-fe0f.png" alt="woman shrugging emoji" aria-pressed="false" class="emoji js-emoji">
+                    </div>
+                </div>
+                <div class='btn-cntr'>
+                    <button type="submit" class='submit-btn hidden'>Submit</button>
+                    <button type="reset" class='reset-btn'>Reset</button>
+                </div>
+            </main>
+        
+        
+        
+    <!--
+        <form class="emotion-selector-form" action="/some-server-endpoint" method ="post">
         <input id="poop" type="radio" name="emotion" value="poop" />
         <label class="drinkcard-cc poop"for="poop"></label>
         <p>poop</p>
@@ -32,10 +74,16 @@
         <label class="drinkcard-cc idk"for="idk"></label>  
         <p>idk</p>
 
-        <div>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+        <div class="container">
+            <div class="btn-holder">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>    
         </div>    
-    </form> 
+        </form> 
+    -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+    <script src="index.js"></script>
 </body>
 </html>
